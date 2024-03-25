@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+
+.gridbox{
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill,minmax(360px,1fr));
+}
+.hidescroll::-webkit-scrollbar{
+  display: none;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.parenthover{
+
+  transition: all ease 3s;
+}
+.parenthover:hover .hovering{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.6179971988795518) 0%, rgba(6,0,0,0) 44%);
+}
+.parenthover:hover .dowllode{ 
+  display: block;
+}
